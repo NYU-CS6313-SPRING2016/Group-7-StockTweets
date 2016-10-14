@@ -1,0 +1,244 @@
+{
+   "top_symbols":[  
+         {  
+            "s_count":5,
+            "s_change":-46,
+            "s_id":7271,
+            "symbol":"$SPY",
+            "s_sector":"Financial",
+            "s_title":"SPDR S&P 500"
+         },
+         {  
+            "s_count":4,
+            "s_change":-9,
+            "s_id":7673,
+            "symbol":"$VRX",
+            "s_sector":"Healthcare",
+            "s_title":"Valeant Pharmaceuticals International, Inc."
+         },
+         {  
+            "s_count":3,
+            "s_change":-78,
+            "s_id":7589,
+            "symbol":"$USO",
+            "s_sector":"Financial",
+            "s_title":"United States Oil ETF"
+         },
+         {  
+            "s_count":3,
+            "s_change":62,
+            "s_id":2044,
+            "symbol":"$GOOG",
+            "s_sector":"Technology",
+            "s_title":"Alphabet Inc. Class C"
+         },
+         {  
+            "s_count":3,
+            "s_change":-41,
+            "s_id":686,
+            "symbol":"$AAPL",
+            "s_sector":"Technology",
+            "s_title":"Apple Inc."
+         },
+         {  
+            "s_count":2,
+            "s_change":-62,
+            "s_id":2735,
+            "symbol":"$MSFT",
+            "s_sector":"Technology",
+            "s_title":"Microsoft Corporation"
+         },
+         {  
+            "s_count":2,
+            "s_change":-55,
+            "s_id":325,
+            "symbol":"$LCI",
+            "s_sector":"Healthcare",
+            "s_title":"Lannett Company, Inc."
+         },
+         {  
+            "s_count":2,
+            "s_change":30,
+            "s_id":5480,
+            "symbol":"$GDX",
+            "s_sector":"Financial",
+            "s_title":"Market Vectors Gold Miners ETF"
+         },
+         {  
+            "s_count":2,
+            "s_change":-91,
+            "s_id":7872,
+            "symbol":"$TWTR",
+            "s_sector":"Technology",
+            "s_title":"Twitter"
+         },
+         {  
+            "s_count":2,
+            "s_change":34,
+            "s_id":4983,
+            "symbol":"$DIS",
+            "s_sector":"Services",
+            "s_title":"Walt Disney Co."
+         },
+         {  
+            "s_count":2,
+            "s_change":-92,
+            "s_id":706,
+            "symbol":"$ACAD",
+            "s_sector":"Healthcare",
+            "s_title":"ACADIA Pharmaceuticals, Inc."
+         },
+         {  
+            "s_count":2,
+            "s_change":17,
+            "s_id":864,
+            "symbol":"$AMZN",
+            "s_sector":"Services",
+            "s_title":"Amazon.com Inc."
+         },
+         {  
+            "s_count":1,
+            "s_change":86,
+            "s_id":7962,
+            "symbol":"$DG",
+            "s_sector":"Services",
+            "s_title":"Dollar General Corporation"
+         },
+         {  
+            "s_count":1,
+            "s_change":-86,
+            "s_id":7568,
+            "symbol":"$UNG",
+            "s_sector":"Financial",
+            "s_title":"United States Natural Gas"
+         },
+         {  
+            "s_count":1,
+            "s_change":8,
+            "s_id":11354,
+            "symbol":"$ANFI",
+            "s_sector":"Consumer Goods",
+            "s_title":"Amira Nature Foods Ltd."
+         },
+         {  
+            "s_count":1,
+            "s_change":-26,
+            "s_id":2051,
+            "symbol":"$GPRO",
+            "s_sector":"Services",
+            "s_title":"GoPro"
+         },
+         {  
+            "s_count":1,
+            "s_change":51,
+            "s_id":2839,
+            "symbol":"$NFLX",
+            "s_sector":"Services",
+            "s_title":"Netflix, Inc."
+         },
+         {  
+            "s_count":1,
+            "s_change":78,
+            "s_id":8660,
+            "symbol":"$TSLA",
+            "s_sector":"Consumer Goods",
+            "s_title":"Tesla Motors, Inc."
+         },
+         {  
+            "s_count":1,
+            "s_change":23,
+            "s_id":2562,
+            "symbol":"$LULU",
+            "s_sector":"Consumer Goods",
+            "s_title":"Lululemon Athletica Inc."
+         },
+         {  
+            "s_count":1,
+            "s_change":-76,
+            "s_id":3083,
+            "symbol":"$PCLN",
+            "s_sector":"Services",
+            "s_title":"priceline.com Incorporated"
+         },
+         {  
+            "s_count":1,
+            "s_change":48,
+            "s_id":5281,
+            "symbol":"$F",
+            "s_sector":"Consumer Goods",
+            "s_title":"Ford Motor Co."
+         },
+         {  
+            "s_count":1,
+            "s_change":67,
+            "s_id":11188,
+            "symbol":"$UVXY",
+            "s_sector":"Financial",
+            "s_title":"ProShares Trust Ultra VIX Short-Term Futures ETF"
+         },
+         {  
+            "s_count":1,
+            "s_change":-94,
+            "s_id":853,
+            "symbol":"$AMRN",
+            "s_sector":"Healthcare",
+            "s_title":"Amarin Corporation plc"
+         },
+         {  
+            "s_count":1,
+            "s_change":-14,
+            "s_id":7428,
+            "symbol":"$TLT",
+            "s_sector":"Financial",
+            "s_title":"iShares 20+ Year Treasury Bond ETF"
+         },
+         {  
+            "s_count":1,
+            "s_change":-2,
+            "s_id":7693,
+            "symbol":"$VXX",
+            "s_sector":"Financial",
+            "s_title":"iPath S&P 500 VIX Short-Term Futures ETN"
+         },
+         {  
+            "s_count":1,
+            "s_change":-91,
+            "s_id":7815,
+            "symbol":"$XLE",
+            "s_sector":"Financial",
+            "s_title":"Energy Select Sector SPDR"
+         },
+         {  
+            "s_count":1,
+            "s_change":-44,
+            "s_id":7819,
+            "symbol":"$XLK",
+            "s_sector":"Financial",
+            "s_title":"Technology Select Sector SPDR"
+         },
+         {  
+            "s_count":1,
+            "s_change":-35,
+            "s_id":9466,
+            "symbol":"$TVIX",
+            "s_sector":"Financial",
+            "s_title":"VelocityShares Daily 2x VIX ST ETN"
+         },
+         {  
+            "s_count":1,
+            "s_change":65,
+            "s_id":4397,
+            "symbol":"$AU",
+            "s_sector":"Basic Materials",
+            "s_title":"AngloGold Ashanti Ltd."
+         },
+         {  
+            "s_count":1,
+            "s_change":2,
+            "s_id":147,
+            "symbol":"$EGO",
+            "s_sector":"Basic Materials",
+            "s_title":"Eldorado Gold Corp."
+         }
+      ]
+   }

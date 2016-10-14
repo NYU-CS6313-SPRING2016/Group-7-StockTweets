@@ -1,0 +1,706 @@
+{
+   "Basic Materials":[
+      {
+         "sector":"Basic Materials",
+         "symbol":"APA",
+         "exchange":"NYSE",
+         "id":4356,
+         "title":"Apache Corp."
+      },
+      {
+         "sector":"Basic Materials",
+         "symbol":"COP",
+         "exchange":"NYSE",
+         "id":4799,
+         "title":"ConocoPhillips"
+      },
+      {
+         "sector":"Basic Materials",
+         "symbol":"CVX",
+         "exchange":"NYSE",
+         "id":4874,
+         "title":"Chevron Corp."
+      },
+      {
+         "sector":"Basic Materials",
+         "symbol":"DD",
+         "exchange":"NYSE",
+         "id":4930,
+         "title":"EI DuPont de Nemours & Co."
+      },
+      {
+         "sector":"Basic Materials",
+         "symbol":"DOW",
+         "exchange":"NYSE",
+         "id":5026,
+         "title":"The Dow Chemical Company"
+      },
+      {
+         "sector":"Basic Materials",
+         "symbol":"DVN",
+         "exchange":"NYSE",
+         "id":5080,
+         "title":"Devon Energy Corporation"
+      },
+      {
+         "sector":"Basic Materials",
+         "symbol":"FCX",
+         "exchange":"NYSE",
+         "id":5310,
+         "title":"Freeport-McMoRan Copper & Gold Inc."
+      },
+      {
+         "sector":"Basic Materials",
+         "symbol":"HAL",
+         "exchange":"NYSE",
+         "id":5633,
+         "title":"Halliburton Company"
+      },
+      {
+         "sector":"Basic Materials",
+         "symbol":"MON",
+         "exchange":"NYSE",
+         "id":6350,
+         "title":"Monsanto Co."
+      },
+      {
+         "sector":"Basic Materials",
+         "symbol":"NOV",
+         "exchange":"NYSE",
+         "id":6532,
+         "title":"National Oilwell Varco, Inc."
+      },
+      {
+         "sector":"Basic Materials",
+         "symbol":"OXY",
+         "exchange":"NYSE",
+         "id":6666,
+         "title":"Occidental Petroleum Corporation"
+      },
+      {
+         "sector":"Basic Materials",
+         "symbol":"SLB",
+         "exchange":"NYSE",
+         "id":7224,
+         "title":"Schlumberger Limited"
+      },
+      {
+         "sector":"Basic Materials",
+         "symbol":"XOM",
+         "exchange":"NYSE",
+         "id":7825,
+         "title":"Exxon Mobil Corporation"
+      }
+   ],
+   "Consumer Goods":[
+      {
+         "sector":"Consumer Goods",
+         "symbol":"CL",
+         "exchange":"NYSE",
+         "id":4751,
+         "title":"Colgate-Palmolive Co."
+      },
+      {
+         "sector":"Consumer Goods",
+         "symbol":"F",
+         "exchange":"NYSE",
+         "id":5281,
+         "title":"Ford Motor Co."
+      },
+      {
+         "sector":"Consumer Goods",
+         "symbol":"GM",
+         "exchange":"NYSE",
+         "id":9358,
+         "title":"General Motors Company"
+      },
+      {
+         "sector":"Consumer Goods",
+         "symbol":"KO",
+         "exchange":"NYSE",
+         "id":6102,
+         "title":"The Coca-Cola Company"
+      },
+      {
+         "sector":"Consumer Goods",
+         "symbol":"MDLZ",
+         "exchange":"NASDAQ",
+         "id":11324,
+         "title":"Mondelez International, Inc."
+      },
+      {
+         "sector":"Consumer Goods",
+         "symbol":"MO",
+         "exchange":"NYSE",
+         "id":6344,
+         "title":"Altria Group Inc."
+      },
+      {
+         "sector":"Consumer Goods",
+         "symbol":"NKE",
+         "exchange":"NYSE",
+         "id":6502,
+         "title":"Nike Inc."
+      },
+      {
+         "sector":"Consumer Goods",
+         "symbol":"PEP",
+         "exchange":"NYSE",
+         "id":6722,
+         "title":"PepsiCo, Inc."
+      },
+      {
+         "sector":"Consumer Goods",
+         "symbol":"PG",
+         "exchange":"NYSE",
+         "id":6741,
+         "title":"Procter & Gamble Co."
+      },
+      {
+         "sector":"Consumer Goods",
+         "symbol":"PM",
+         "exchange":"NYSE",
+         "id":6826,
+         "title":"Philip Morris International, Inc."
+      }
+   ],
+   "Industrial Goods":[
+      {
+         "sector":"Industrial Goods",
+         "symbol":"BA",
+         "exchange":"NYSE",
+         "id":4437,
+         "title":"Boeing Co."
+      },
+      {
+         "sector":"Industrial Goods",
+         "symbol":"CAT",
+         "exchange":"NYSE",
+         "id":4656,
+         "title":"Caterpillar Inc."
+      },
+      {
+         "sector":"Industrial Goods",
+         "symbol":"EMR",
+         "exchange":"NYSE",
+         "id":5172,
+         "title":"Emerson Electric Co."
+      },
+      {
+         "sector":"Industrial Goods",
+         "symbol":"GD",
+         "exchange":"NYSE",
+         "id":5474,
+         "title":"General Dynamics Corp."
+      },
+      {
+         "sector":"Industrial Goods",
+         "symbol":"GE",
+         "exchange":"NYSE",
+         "id":5481,
+         "title":"General Electric Co."
+      },
+      {
+         "sector":"Industrial Goods",
+         "symbol":"HON",
+         "exchange":"NYSE",
+         "id":5707,
+         "title":"Honeywell International Inc."
+      },
+      {
+         "sector":"Industrial Goods",
+         "symbol":"LMT",
+         "exchange":"NYSE",
+         "id":6187,
+         "title":"Lockheed Martin Corporation"
+      },
+      {
+         "sector":"Industrial Goods",
+         "symbol":"RTN",
+         "exchange":"NYSE",
+         "id":7090,
+         "title":"Raytheon Co."
+      },
+      {
+         "sector":"Industrial Goods",
+         "symbol":"UTX",
+         "exchange":"NYSE",
+         "id":7598,
+         "title":"United Technologies Corp."
+      }
+   ],
+   "Services":[
+      {
+         "sector":"Services",
+         "symbol":"AMZN",
+         "exchange":"NASDAQ",
+         "id":864,
+         "title":"Amazon.com Inc."
+      },
+      {
+         "sector":"Services",
+         "symbol":"CMCSA",
+         "exchange":"NASDAQ",
+         "id":1348,
+         "title":"Comcast Corporation"
+      },
+      {
+         "sector":"Services",
+         "symbol":"COST",
+         "exchange":"NASDAQ",
+         "id":1403,
+         "title":"Costco Wholesale Corporation"
+      },
+      {
+         "sector":"Services",
+         "symbol":"CVS",
+         "exchange":"NYSE",
+         "id":4873,
+         "title":"CVS Caremark Corporation"
+      },
+      {
+         "sector":"Services",
+         "symbol":"DIS",
+         "exchange":"NYSE",
+         "id":4983,
+         "title":"Walt Disney Co."
+      },
+      {
+         "sector":"Services",
+         "symbol":"EBAY",
+         "exchange":"NASDAQ",
+         "id":1666,
+         "title":"eBay Inc."
+      },
+      {
+         "sector":"Services",
+         "symbol":"FDX",
+         "exchange":"NYSE",
+         "id":5322,
+         "title":"FedEx Corporation"
+      },
+      {
+         "sector":"Services",
+         "symbol":"HD",
+         "exchange":"NYSE",
+         "id":5650,
+         "title":"The Home Depot, Inc."
+      },
+      {
+         "sector":"Services",
+         "symbol":"LOW",
+         "exchange":"NYSE",
+         "id":6195,
+         "title":"Lowe's Companies Inc."
+      },
+      {
+         "sector":"Services",
+         "symbol":"MA",
+         "exchange":"NYSE",
+         "id":6228,
+         "title":"MasterCard Incorporated"
+      },
+      {
+         "sector":"Services",
+         "symbol":"MCD",
+         "exchange":"NYSE",
+         "id":6245,
+         "title":"McDonald's Corp."
+      },
+      {
+         "sector":"Services",
+         "symbol":"NSC",
+         "exchange":"NYSE",
+         "id":6564,
+         "title":"Norfolk Southern Corp."
+      },
+      {
+         "sector":"Services",
+         "symbol":"SBUX",
+         "exchange":"NASDAQ",
+         "id":3465,
+         "title":"Starbucks Corporation"
+      },
+      {
+         "sector":"Services",
+         "symbol":"TGT",
+         "exchange":"NYSE",
+         "id":7396,
+         "title":"Target Corp."
+      },
+      {
+         "sector":"Services",
+         "symbol":"TWX",
+         "exchange":"NYSE",
+         "id":7502,
+         "title":"Time Warner Inc."
+      },
+      {
+         "sector":"Services",
+         "symbol":"UNP",
+         "exchange":"NYSE",
+         "id":7571,
+         "title":"Union Pacific Corporation"
+      },
+      {
+         "sector":"Services",
+         "symbol":"UPS",
+         "exchange":"NYSE",
+         "id":7577,
+         "title":"United Parcel Service, Inc."
+      },
+      {
+         "sector":"Services",
+         "symbol":"V",
+         "exchange":"NYSE",
+         "id":7610,
+         "title":"Visa, Inc."
+      },
+      {
+         "sector":"Services",
+         "symbol":"WBA",
+         "exchange":"NYSE",
+         "id":7698,
+         "title":"Walgreens Boots Alliance"
+      },
+      {
+         "sector":"Services",
+         "symbol":"WMT",
+         "exchange":"NYSE",
+         "id":7745,
+         "title":"Walmart Stores Inc."
+      }
+   ],
+   "Financial":[
+      {
+         "sector":"Financial",
+         "symbol":"AIG",
+         "exchange":"NYSE",
+         "id":4296,
+         "title":"American International Group, Inc."
+      },
+      {
+         "sector":"Financial",
+         "symbol":"ALL",
+         "exchange":"NYSE",
+         "id":4321,
+         "title":"The Allstate Corporation"
+      },
+      {
+         "sector":"Financial",
+         "symbol":"AXP",
+         "exchange":"NYSE",
+         "id":4423,
+         "title":"American Express Company"
+      },
+      {
+         "sector":"Financial",
+         "symbol":"BAC",
+         "exchange":"NYSE",
+         "id":4438,
+         "title":"Bank of America Corporation"
+      },
+      {
+         "sector":"Financial",
+         "symbol":"BK",
+         "exchange":"NYSE",
+         "id":4530,
+         "title":"The Bank of New York Mellon Corporation"
+      },
+      {
+         "sector":"Financial",
+         "symbol":"BLK",
+         "exchange":"NYSE",
+         "id":4544,
+         "title":"BlackRock, Inc."
+      },
+      {
+         "sector":"Financial",
+         "symbol":"C",
+         "exchange":"NYSE",
+         "id":4641,
+         "title":"Citigroup, Inc."
+      },
+      {
+         "sector":"Financial",
+         "symbol":"COF",
+         "exchange":"NYSE",
+         "id":4794,
+         "title":"Capital One Financial Corp."
+      },
+      {
+         "sector":"Financial",
+         "symbol":"GS",
+         "exchange":"NYSE",
+         "id":5593,
+         "title":"Goldman Sachs Group, Inc."
+      },
+      {
+         "sector":"Financial",
+         "symbol":"JPM",
+         "exchange":"NYSE",
+         "id":6020,
+         "title":"JPMorgan Chase & Co."
+      },
+      {
+         "sector":"Financial",
+         "symbol":"MET",
+         "exchange":"NYSE",
+         "id":6272,
+         "title":"MetLife, Inc."
+      },
+      {
+         "sector":"Financial",
+         "symbol":"MS",
+         "exchange":"NYSE",
+         "id":6372,
+         "title":"Morgan Stanley"
+      },
+      {
+         "sector":"Financial",
+         "symbol":"SPG",
+         "exchange":"NYSE",
+         "id":7264,
+         "title":"Simon Property Group Inc."
+      },
+      {
+         "sector":"Financial",
+         "symbol":"USB",
+         "exchange":"NYSE",
+         "id":7584,
+         "title":"U.S. Bancorp"
+      },
+      {
+         "sector":"Financial",
+         "symbol":"WFC",
+         "exchange":"NYSE",
+         "id":7718,
+         "title":"Wells Fargo & Company"
+      }
+   ],
+   "Conglomerates":[
+      {
+         "sector":"Conglomerates",
+         "symbol":"MMM",
+         "exchange":"NYSE",
+         "id":6334,
+         "title":"3M Co."
+      }
+   ],
+   "Healthcare":[
+      {
+         "sector":"Healthcare",
+         "symbol":"ABBV",
+         "exchange":"NYSE",
+         "id":11364,
+         "title":"AbbVie Inc."
+      },
+      {
+         "sector":"Healthcare",
+         "symbol":"ABT",
+         "exchange":"NYSE",
+         "id":4218,
+         "title":"Abbott Laboratories"
+      },
+      {
+         "sector":"Healthcare",
+         "symbol":"AMGN",
+         "exchange":"NASDAQ",
+         "id":838,
+         "title":"Amgen Inc."
+      },
+      {
+         "sector":"Healthcare",
+         "symbol":"BAX",
+         "exchange":"NYSE",
+         "id":4445,
+         "title":"Baxter International Inc."
+      },
+      {
+         "sector":"Healthcare",
+         "symbol":"BIIB",
+         "exchange":"NASDAQ",
+         "id":1075,
+         "title":"Biogen Idec Inc."
+      },
+      {
+         "sector":"Healthcare",
+         "symbol":"BMY",
+         "exchange":"NYSE",
+         "id":4559,
+         "title":"Bristol-Myers Squibb Company"
+      },
+      {
+         "sector":"Healthcare",
+         "symbol":"GILD",
+         "exchange":"NASDAQ",
+         "id":2010,
+         "title":"Gilead Sciences Inc."
+      },
+      {
+         "sector":"Healthcare",
+         "symbol":"JNJ",
+         "exchange":"NYSE",
+         "id":6011,
+         "title":"Johnson & Johnson"
+      },
+      {
+         "sector":"Healthcare",
+         "symbol":"LLY",
+         "exchange":"NYSE",
+         "id":6183,
+         "title":"Eli Lilly & Co."
+      },
+      {
+         "sector":"Healthcare",
+         "symbol":"MDT",
+         "exchange":"NYSE",
+         "id":6260,
+         "title":"Medtronic, Inc."
+      },
+      {
+         "sector":"Healthcare",
+         "symbol":"MRK",
+         "exchange":"NYSE",
+         "id":6368,
+         "title":"Merck & Co. Inc."
+      },
+      {
+         "sector":"Healthcare",
+         "symbol":"PFE",
+         "exchange":"NYSE",
+         "id":6728,
+         "title":"Pfizer Inc."
+      },
+      {
+         "sector":"Healthcare",
+         "symbol":"UNH",
+         "exchange":"NYSE",
+         "id":7569,
+         "title":"Unitedhealth Group, Inc."
+      }
+   ],
+   "Technology":[
+      {
+         "sector":"Technology",
+         "symbol":"AAPL",
+         "exchange":"NASDAQ",
+         "id":686,
+         "title":"Apple Inc."
+      },
+      {
+         "sector":"Technology",
+         "symbol":"ACN",
+         "exchange":"NYSE",
+         "id":4232,
+         "title":"Accenture plc"
+      },
+      {
+         "sector":"Technology",
+         "symbol":"CSCO",
+         "exchange":"NASDAQ",
+         "id":1471,
+         "title":"Cisco Systems, Inc."
+      },
+      {
+         "sector":"Technology",
+         "symbol":"EMC",
+         "exchange":"NYSE",
+         "id":5163,
+         "title":"EMC Corporation"
+      },
+      {
+         "sector":"Technology",
+         "symbol":"FB",
+         "exchange":"NASDAQ",
+         "id":7871,
+         "title":"Facebook"
+      },
+      {
+         "sector":"Technology",
+         "symbol":"GOOG",
+         "exchange":"NASDAQ",
+         "id":2044,
+         "title":"Alphabet Inc. Class C"
+      },
+      {
+         "sector":"Technology",
+         "symbol":"IBM",
+         "exchange":"NYSE",
+         "id":5786,
+         "title":"International Business Machines Corp."
+      },
+      {
+         "sector":"Technology",
+         "symbol":"INTC",
+         "exchange":"NASDAQ",
+         "id":2310,
+         "title":"Intel Corporation"
+      },
+      {
+         "sector":"Technology",
+         "symbol":"MSFT",
+         "exchange":"NASDAQ",
+         "id":2735,
+         "title":"Microsoft Corporation"
+      },
+      {
+         "sector":"Technology",
+         "symbol":"ORCL",
+         "exchange":"NASDAQ",
+         "id":3012,
+         "title":"Oracle Corp."
+      },
+      {
+         "sector":"Technology",
+         "symbol":"QCOM",
+         "exchange":"NASDAQ",
+         "id":3290,
+         "title":"QUALCOMM Incorporated"
+      },
+      {
+         "sector":"Technology",
+         "symbol":"T",
+         "exchange":"NYSE",
+         "id":7341,
+         "title":"AT&T, Inc."
+      },
+      {
+         "sector":"Technology",
+         "symbol":"TXN",
+         "exchange":"NYSE",
+         "id":7505,
+         "title":"Texas Instruments Inc."
+      },
+      {
+         "sector":"Technology",
+         "symbol":"VZ",
+         "exchange":"NYSE",
+         "id":7696,
+         "title":"Verizon Communications Inc."
+      }
+   ],
+   "Utilities":[
+      {
+         "sector":"Utilities",
+         "symbol":"EXC",
+         "exchange":"NYSE",
+         "id":5269,
+         "title":"Exelon Corp."
+      },
+      {
+         "sector":"Utilities",
+         "symbol":"NEE",
+         "exchange":"NYSE",
+         "id":8656,
+         "title":"NextEra Energy, Inc."
+      },
+      {
+         "sector":"Utilities",
+         "symbol":"SO",
+         "exchange":"NYSE",
+         "id":7256,
+         "title":"Southern Company"
+      }
+   ]
+}

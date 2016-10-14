@@ -1,0 +1,23 @@
+1. symbol
+    Default: If not declared, the API will look for 'sector'. If no sector is declared, it returns data for all symbols in all sectors..
+    Example: api?symbol=APPL
+
+2. sector
+    Default: All. If there is 'symbol' param in the request, the API will ignore 'sector' and use 'symbol' to query data.
+    Example: api?sector=Basic
+
+3. Time
+    a. until
+    The time duration is from 2 hours ago from the declared time to the declared time
+    Default: Current time
+    Example: /api?until=2010-01-01T23:59:59
+
+    b. from, to
+    When using from and to, they must occur in pairs when sending a request.
+    Default: from 2 hours ago to now
+    Example: /api?from=2010-01-01T23:59:59&to=to=2010-01-02T12:00:00
+
+    c. period
+    Time duration for each slot in line charts. If used, the 'until' param or 'from', 'to' pairs must be declared
+    Default: 600s
+    Example: api?period=1800

@@ -1,0 +1,8 @@
+venv
+*.pyc
+staticfiles
+.env
+.DS_Store
+infovis/.DS_Store
+infovis/migrations/
+stocktwitsinfovis/settings_local.py

@@ -1,0 +1,190 @@
+{% load staticfiles %}       
+<!DOCTYPE html>
+<html lang="en">
+    <head>       
+        <!-- Meta character set -->
+        <meta charset="utf-8">
+        
+        <!-- Site title -->
+        <title>StockTwits Realtime</title>
+        
+        <!-- favicon -->
+        <link rel="shortcut icon" type="image/png" href="{% static "img/favicon_strl.png" %}"/>
+
+        <!-- Styles -->
+        <link type="text/css" rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+        <link type="text/css" rel="stylesheet" href="{% static "css/bootstrap.min.css.map" %}">
+        <link type="text/css" rel="stylesheet" href="{% static "css/c3.min.css" %}">
+        <link type="text/css" rel="stylesheet" href="{% static "css/switchery.min.css" %}">
+        <link type="text/css" rel="stylesheet" href="{% static "css/bootstrap-clockpicker.min.css" %}">
+        <link type="text/css" rel="stylesheet" href="{% static "css/jquery-clockpicker.min.css" %}">
+        <link type="text/css" rel="stylesheet" href="{% static "css/clockpicker.css" %}">
+        <link type="text/css" rel="stylesheet" href="{% static "css/standalone.css" %}">  
+        <link type="text/css" rel="stylesheet" href="{% static "css/pace.css" %}">  
+        <link type="text/css" rel="stylesheet" href="{% static "css/main.css" %}">      
+    </head>
+
+    <body>
+      <!-- Tooltip -->
+      <div id="tooltip" class="hidden">
+      
+      </div>     
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel"></h4><span id="myModalLabel2"></span>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>      
+      
+      <div class="row navst">
+            <div class="col-md-2">
+              <div class="logoimg">
+                <img src="{% static "img/logo_strl.png" %}" alt="logo_strl">
+              </div>
+            </div>   
+            <div class="toptoolsgroup col-md-10">
+              <div class="toptools toggle" data-toggle="tooltip" data-placement="bottom" title="Turn on/off stream">
+                <input type="checkbox" class="js-switch" checked />
+              </div>
+              <div class="toptools refresh" data-toggle="tooltip" data-placement="bottom" title="Refresh all data">
+                <span class="glyphicon glyphicon-refresh"></span>
+              </div>            
+            </div>            
+      </div>
+
+      <div class="row threeparts">
+        <!-- leftpart: stock list -->
+        <div class="col-md-2 leftpart">
+          <!-- clock picker -->
+          <!-- <div class="clockpickers">
+            <div class="input-group clockpicker clockpicker1">
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-time"></span>
+                </span>              
+                <input type="text" class="form-control" value="9:30">
+            </div> 
+            <div class="input-group clockpicker clockpicker2">
+                <input type="text" class="form-control" value="16:00">
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-time"></span>
+                </span>
+            </div>  
+          </div> -->                   
+
+          <!-- search -->
+          <div class="input-group lefttools search">
+            <span class="input-group-btn lefttoolsicon searchicon">
+              <span class="glyphicon glyphicon-search"></span>
+            </span>
+            <input type="text" class="form-control" id="searchstock" placeholder="Search a stock...">
+          </div>
+          
+          <!-- filter  -->
+          <div class="input-group lefttools filter">
+            <span class="input-group-btn lefttoolsicon filtericon">
+              <span class="glyphicon glyphicon-filter"></span>
+            </span>
+            <input type="text" class="form-control" id="filtersector" placeholder="Overview">
+          </div>          
+
+          <!-- stock list -->
+          <div id="stocklist">
+          
+          </div>
+        </div>
+
+
+        <!-- middlepart: treemap, line chart and area chart-->
+        <div class="col-md-7 middlepart">
+          <div class="visname">
+            <span>SENTIMENT & SOCIAL VOLUME CHART<span class="selectedname">Overview</span> </span>
+          </div>          
+          <div id="all_chart">
+            <div id="line_chart">
+            
+            </div>
+            <div id="area_chart">
+            
+            </div>
+          </div>
+          <div class="visname treemapname">
+            <span>OVERVIEW SENTIMENT TREEMAP
+            <ul class="sentiment_colors">
+              <li>SENTIMENT: </li>
+              <li class="red2">+0%</li>
+              <li class="red1">+25%</li>
+              <li class="neutral0">50%</li>
+              <li class="green1">+50%</li>
+              <li class="green2">+75%</li>
+              <li>SIZE: SOCIAL VOLUME</li>
+              </ul>
+            </span>
+          </div>          
+          <div id="treemap">
+
+          </div>
+        </div>
+          
+
+        <!-- rightpart: word cloud and idea list -->
+        <div class="col-md-3 rightpart">
+          <!-- <div class="visname">
+            <span>Keyword Cloud</span>
+          </div>        
+          <div id="keywordcloud">
+            
+          </div> -->
+          
+          <!-- <div class="visname">
+            <span>Idea List</span>
+          </div> --> 
+          <div id="idealist">
+            
+          </div>          
+        </div>
+      </div>
+
+
+        <!-- Scripts --> 
+        <script type="text/javascript" src="{% static "js/third/jquery-2.2.3.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/third/jquery-ui.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/third/jquery.autocomplete.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/third/d3.v3.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/third/c3.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/third/d3.layout.cloud.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/third/bootstrap.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/third/switchery.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/third/bootstrap-clockpicker.min.js" %}"></script>      
+        <script type="text/javascript" src="{% static "js/third/jquery-clockpicker.min.js" %}"></script>      
+        <script type="text/javascript" src="{% static "js/third/clockpicker.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/third/pace.min.js" %}"></script>
+
+
+        <script type="text/javascript" src="{% static "js/main.js" %}"></script>
+
+        <script type="text/javascript" src="{% static "js/treemap.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/treemap_realtime.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/keywordcloud.js" %}"></script>
+        
+        <script type="text/javascript" src="{% static "js/stocklist.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/stocklist_realtime.js" %}"></script>        
+        <script type="text/javascript" src="{% static "js/chart.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/chart_realtime.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/idealist.js" %}"></script>        
+        <script type="text/javascript" src="{% static "js/idealist_realtime.js" %}"></script>        
+    </body>
+
+</html>

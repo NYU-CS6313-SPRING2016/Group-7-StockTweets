@@ -1,0 +1,587 @@
+/* ==========================================================================
+   0. global
+*  ========================================================================== */
+
+html, body {
+  height: 100%;
+  background-color: #212121;
+}
+
+/*.logo {
+  height: 100%;
+  display: inline !important;
+}*/
+
+/*.visname {
+  color: #73ACE5;
+}*/
+
+.row {
+  margin-right: 0px;
+}
+
+#tooltip {
+  font-size: 10px;
+  position: absolute;
+  width: 100px;
+  height: auto;
+  padding: 5px;
+  background-color: rgba(189,189,189,0.8);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  transition: all 0.5s;
+  z-index: 99;
+}
+#tooltip.hidden {
+  display: none;
+}
+#tooltip .tipsname {
+  font-size: 14px;
+  font-weight: bold;
+}
+.tipstitle {
+  font-weight: bold;
+}
+
+/*#tooltip p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}*/
+
+
+.visname span {
+  padding-top: 6px;
+  color: #BDBDBD;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.9s linear;
+}
+.selectedname {
+  float: right;
+  color: #212121 !important;
+  background-color: #EEEEEE;
+  padding-left: 6px;
+  padding-right: 6px; 
+  width: 100px; 
+  text-align: center;
+}
+
+/*.list-group-item {
+  margin-bottom: 0px;
+  border-bottom: 1px solid #313131 !important;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   1. nav
+*  ========================================================================== */
+
+/*.navbar {
+  margin-bottom: 0px;
+
+  background: #000000;
+  border-radius: initial;
+}
+
+
+.navbar-brand span {
+  
+  color: #9E9E9E;
+}*/
+
+.navst {
+  height: 50px;
+  background: #000000;
+}
+.logoimg img{
+  height: 50px;
+}
+
+
+.toptoolsgroup {
+  padding-left: 0px;
+}
+.toptools {
+  opacity: 0;
+  transition: opacity 0.9s linear;
+}
+
+.refresh {
+  border-left: 3px solid #000000;
+  padding: 15px 20px 15px 20px;
+  float: left;
+  
+  background-color: #212121;
+  color: #9E9E9E;
+}
+.refresh:hover {
+  cursor: pointer;
+  background-color: #424242;
+}
+
+.toggle {
+  float: left;
+  padding: 9px 2px 9px 2px;
+  background-color: #212121;
+}
+
+/* ==========================================================================
+   threeparts
+*  ========================================================================== */
+
+.threeparts {
+  height: calc(100% - 50px);
+}
+
+/* ==========================================================================
+   2. leftpart: stocklist
+*  ========================================================================== */
+
+.leftpart {
+  height: 100%;
+  background-color: #212121;
+}
+
+
+
+/* clock picker */
+/*.clockpickers .clockpicker {
+  border-bottom: 1px solid #313131;
+}
+
+.clockpicker {
+  width: 50%;
+  float: left;
+}
+.clockpicker input {
+  font-size: 11px;
+}
+.clockpicker span,
+.clockpicker input {
+  
+  background-color: #212121;
+  color: #9E9E9E;
+  border: initial;
+}*/
+
+
+
+/* lefttools: search, filter */
+.lefttools {
+  border-bottom: 1px solid #323232;
+  opacity: 0;
+  transition: opacity 0.9s linear;
+}
+
+.lefttools span,
+.lefttools button,
+.lefttools input {
+  
+  background-color: #212121;
+  color: #9E9E9E;
+  border: initial;
+}
+
+.lefttoolsicon {
+  font-size: 14px;
+  padding: 6px 12px 6px 12px;
+}
+
+.autocompletee-suggestions {
+  background-color: #323232;
+  color: #9E9E9E;
+}
+.autocompletee-suggestion {
+  padding-left: 12px;
+}
+.autocompletee-suggestion strong {
+  color: #73ACE5;
+}
+
+.ui-autocomplete {
+  background-color: #323232;
+  color: #9E9E9E;
+  width: 148px;
+  list-style-type: none;
+  padding-left: 12px;
+}
+
+.autocompletee-selected,
+.ui-state-focus {
+  background-color: #424242;
+  cursor: pointer;
+}
+
+
+
+/* stock list: stocks */
+#stocklist .bar {
+  fill: #40576F;
+}
+#stocklist .category,
+#idealist .category {
+  fill: #BDBDBD;
+  white-space: normal;
+  text-overflow: ellipsis;  
+}
+#stocklist .label,
+#idealist .label {
+  fill: #BDBDBD;
+}
+
+#stocklist,
+#idealist {
+	overflow-y: scroll;
+}
+
+#stocklist .category:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+#idealist .bar {
+  fill: #212121;
+}
+#idealist .label.minfo {
+  fill: #757575;
+}
+#idealist .label.mbull {
+  fill: #6FAD43;
+}
+.mbull {
+  color: #6FAD43;
+  float: right;
+  background-color: #EEEEEE;
+}
+#idealist .label.mbear {
+  fill: #BE3C2B;
+}
+.mbear {
+  color: #BE3C2B;
+  float: right;
+  background-color: #EEEEEE;
+}
+#idealist .label.mneutral {
+  fill: #757575;
+}
+.mneutral {
+  color: #757575;
+  float: right;
+  background-color: #EEEEEE;
+}
+#idealist .chartRow:hover {
+  cursor: pointer;
+}
+#idealist {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/*#stocklist .list-group-item {
+  max-height: 3.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0px 7px;
+  cursor: pointer;
+  padding-top: 2%;
+  padding-bottom: 2%;  
+  padding-left: 15px;
+
+  background-color: #212121;
+  color: #9E9E9E;
+  border: initial;  
+}*/
+
+
+
+/* stock list: smallbar */
+/*.smallbar {
+  display: inline-block;
+  float: right;
+  min-width: 73px;
+}
+.smallbarcontainer {
+  display: inline-block; 
+  width: 46px; 
+  height: 8px; 
+  border-radius: 3px; 
+  position: relative; 
+  border: 1px solid #73ACE5;  
+}
+.smallbarbar {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #73ACE5;  
+}
+.smallbarnum {
+  font-size: 10px;
+}*/
+
+
+
+
+/* ==========================================================================
+   3. middlepart: treemap, line + area chart
+*  ========================================================================== */
+
+.middlepart {
+  height: 100%;
+  background-color: #323232;
+}
+
+
+
+
+/* treemap */
+#treemap {
+    /*overflow: hidden;*/
+    /*margin: 0;*/
+    font-size: 12px;
+    /*margin-top: 10px;*/
+    /*font-family: "Helvetica Neue", Helvetica;*/
+}
+
+#treemap .cell.parent:nth-of-type(1) {
+    display: none;
+}
+
+#treemap .footer {
+    z-index: 1;
+    display: block;
+    font-size: 26px;
+    font-weight: 200;
+    text-shadow: 0 1px 0 #fff;
+}
+
+#treemap svg {
+    overflow: hidden;
+}
+
+#treemap rect {
+    pointer-events: all;
+    cursor: pointer;
+    stroke: #212121;
+}
+
+#treemap .chart {
+    display: block;
+    margin: auto;
+}
+
+#treemap .parent .label {
+    color: #9E9E9E;
+
+/*    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);*/
+}
+
+#treemap .labelbody {
+    background: transparent;
+}
+
+#treemap .label {
+    margin: 2px;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    color: #EEEEEE;
+
+/*    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);*/
+}
+
+#treemap .label:hover {
+  /*text-decoration: underline;*/
+}
+
+#treemap .child .label {
+    white-space: pre-wrap;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+#treemap .cell {
+    font-size: 11px;
+    cursor: pointer
+}
+
+.treemapname {
+  margin: 5px -15px 0px -15px;
+  padding: 2px 15px 0px 15px;
+  border-top: 3px solid ;
+}
+
+.treemaphelpicon:hover {
+  color: #EEEEEE;
+  cursor: pointer;
+}
+.sentiment_colors {
+  padding-top: 6px;
+  margin-bottom: 0px;
+  float: right;
+  list-style: none outside;
+  opacity: 0;
+  transition: opacity 0.9s linear;
+}
+.sentiment_colors li {
+  border: 1px solid #262626;
+  float: left;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  min-width: 40px;
+  width: auto;
+}
+.red2 {
+  background-color: #BE3C2B;
+}
+.red1 {
+  background-color: #852a1e;
+}
+.neutral0 {
+  background-color: #616161;
+}
+.green1 {
+  background-color: #4d792e;
+}
+.green2 {
+  background-color: #6FAD43;
+}
+
+
+/* lineareachar */
+#line_chart .tick text {
+  fill: #9E9E9E;
+  font-size: 10px;
+}
+#area_chart .tick text {
+  fill: #9E9E9E;
+  font-size: 10px;
+}
+
+#line_chart {
+	/*height: 200px;*/
+	/*background-color: #00FFFF;*/
+}
+
+#line_chart path { 
+    stroke: #CE93D8;
+    
+    stroke-width: 2;
+    fill: none;
+}
+
+#line_chart .axis path,
+#line_chart .axis line {
+    fill: none;
+    stroke: #616161;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+#area_chart {
+	/*height: 100px;*/
+	/*background-color: #FFFF00;*/
+}
+
+#area_chart path { 
+  stroke: #40576F;
+  stroke-width: 2;
+  fill: none;
+}
+
+#area_chart .axis path,
+#area_chart .axis line {
+  fill: none;
+  stroke: #757575;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+#area_chart .area {
+  fill: #40576F;
+}
+
+
+/* ==========================================================================
+   4. rightpart: keyword cloud, idealist
+*  ========================================================================== */
+
+.rightpart {
+  height: 100%;
+  background-color: #212121;
+}
+
+#myModalLabel {
+  float: left;
+  
+}
+#myModalLabel2 {
+  float: left;
+  padding-top: 3px;
+  padding-left: 3px;  
+}
+
+/*#keywordcloud {
+	height: 200px;
+	border: 1px solid;
+}*/
+
+
+
+/*#idealist .list-group-item {
+	max-height: 3.6em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 0px 7px;
+  padding-top: 2%;
+  padding-bottom: 12%;
+
+  background-color: #212121;
+  color: #9E9E9E;
+  border: initial;  
+}
+#idealist .list-group-item:hover {
+  cursor: pointer;
+  background-color: #313131;
+}*/
+
+/*.username {
+	color: #E0E0E0;
+}
+.sentiment {
+  float: right;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-width: 55px;
+  color: white;
+}
+.messagetime {
+  font-size: 8px;
+}
+.bullidea {
+  background-color: #6FAD43;
+}
+.bearidea {
+  background-color: #BE3C2B;
+}
+.neutralidea {
+  background-color: #757575;
+}*/
+
